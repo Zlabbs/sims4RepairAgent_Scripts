@@ -1,0 +1,5 @@
+<script>
+	<needsAdmin>false</needsAdmin> //admin permissions are required
+	<autoCheckScript>false</autoCheckScript> //a script which prints 1 if it needs to be applyed
+	<runScript>false</runScript>
+</script>
