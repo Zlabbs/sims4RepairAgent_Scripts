@@ -1,4 +1,4 @@
-<script>
+<_script>
 	<title>Test</title>
 	<desc>hiiiiiiiiiiiiiiiiii</desc>
 
@@ -8,16 +8,40 @@
 	
 	<searchTags_Helpful>hi,bob,</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
 	<searchTags_Required></searchTags_Required> //is required for the result to turn up in the list
+</_script>
+
+<script>
+	<title>Wont start (cache clear)</title>
+	<desc>Destroys bad cache files.</desc>
+
+	<needsAdmin>false</needsAdmin> 
+	<autoCheckScript></autoCheckScript> 
+	<runScript>something_else.bat</runScript>
+	
+	<searchTags_Helpful>start,cache,</searchTags_Helpful>
+	<searchTags_Required></searchTags_Required>
 </script>
 
 <script>
-	<title>furry</title>
-	<desc>good no?</desc>
+	<title>Wont start (mod corruption)</title>
+	<desc>Moves the mods from the game and if that fixes the issue you can make the move a delete</desc>
 
-	<needsAdmin>true</needsAdmin> //admin permissions are required
-	<autoCheckScript>something.bat</autoCheckScript> //a script which exits with a code != 0 if the run script needs to be applyed
+	<needsAdmin>false</needsAdmin> 
+	<autoCheckScript></autoCheckScript> 
 	<runScript>something_else.bat</runScript>
 	
-	<searchTags_Helpful>wow,hi,</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
-	<searchTags_Required>gay</searchTags_Required> //is required for the result to turn up in the list
+	<searchTags_Helpful>start,corruption,</searchTags_Helpful>
+	<searchTags_Required></searchTags_Required>
+</script>
+
+<script>
+	<title>Blocked from running.</title>
+	<desc>Is blocked from running by windows.</desc>
+
+	<needsAdmin>false</needsAdmin> 
+	<autoCheckScript>something.bat</autoCheckScript> 
+	<runScript>something_else.bat</runScript>
+	
+	<searchTags_Helpful>windows,</searchTags_Helpful>
+	<searchTags_Required>blocked,</searchTags_Required>
 </script>
