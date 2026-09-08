@@ -6,7 +6,7 @@
 	<autoCheckScript>something.bat</autoCheckScript> //a script which exits with a code != 0 if the run script needs to be applyed
 	<runScript>something_else.bat</runScript>
 	
-	<searchTags_Helpful>hi,bob</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
+	<searchTags_Helpful>hi,bob,</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
 	<searchTags_Required></searchTags_Required> //is required for the result to turn up in the list
 </script>
 
@@ -18,6 +18,6 @@
 	<autoCheckScript>something.bat</autoCheckScript> //a script which exits with a code != 0 if the run script needs to be applyed
 	<runScript>something_else.bat</runScript>
 	
-	<searchTags_Helpful>hi,bob</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
-	<searchTags_Required></searchTags_Required> //is required for the result to turn up in the list
+	<searchTags_Helpful>wow,hi,</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
+	<searchTags_Required>gay</searchTags_Required> //is required for the result to turn up in the list
 </script>
