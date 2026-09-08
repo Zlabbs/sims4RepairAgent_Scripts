@@ -14,7 +14,7 @@
 	<title>furry</title>
 	<desc>good no?</desc>
 
-	<needsAdmin>false</needsAdmin> //admin permissions are required
+	<needsAdmin>true</needsAdmin> //admin permissions are required
 	<autoCheckScript>something.bat</autoCheckScript> //a script which exits with a code != 0 if the run script needs to be applyed
 	<runScript>something_else.bat</runScript>
 	
