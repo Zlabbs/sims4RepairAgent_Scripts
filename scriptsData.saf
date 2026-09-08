@@ -1,6 +1,18 @@
 <script>
-	<title>a</title>
-	<desc>a</desc>
+	<title>Test</title>
+	<desc>hiiiiiiiiiiiiiiiiii</desc>
+
+	<needsAdmin>false</needsAdmin> //admin permissions are required
+	<autoCheckScript>something.bat</autoCheckScript> //a script which exits with a code != 0 if the run script needs to be applyed
+	<runScript>something_else.bat</runScript>
+	
+	<searchTags_Helpful>hi,bob</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
+	<searchTags_Required></searchTags_Required> //is required for the result to turn up in the list
+</script>
+
+<script>
+	<title>furry</title>
+	<desc>good no?</desc>
 
 	<needsAdmin>false</needsAdmin> //admin permissions are required
 	<autoCheckScript>something.bat</autoCheckScript> //a script which exits with a code != 0 if the run script needs to be applyed
