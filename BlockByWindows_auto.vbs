@@ -1,8 +1,8 @@
 data = InputBox( "hi", "this is a", "test" )
-incaseof = "end"
+incaseof = "a"
 
 If data = incaseof Then
-WScript.Quit(1)
+WScript.Quit(0)
 End If
 
-WScript.Quit(0)
+WScript.Quit(1)
