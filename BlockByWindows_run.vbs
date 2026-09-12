@@ -4,4 +4,4 @@ If Not WScript.Arguments.Named.Exists("elevate") Then
     WScript.Quit
 End If
 
-data = InputBox( "wow", "hi", "gordon" )
+'== admin code bellow ===========================================================================
