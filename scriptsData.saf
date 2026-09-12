@@ -39,8 +39,8 @@
 	<desc>Is blocked from running by windows.</desc>
 
 	<needsAdmin>false</needsAdmin> 
-	<autoCheckScript>something.bat</autoCheckScript> 
-	<runScript>something_else.bat</runScript>
+	<autoCheckScript>BlockByWindows_auto.vbs</autoCheckScript> 
+	<runScript>BlockByWindows_run.vbs</runScript>
 	
 	<searchTags_Helpful>windows,</searchTags_Helpful>
 	<searchTags_Required>blocked,</searchTags_Required>
