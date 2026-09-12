@@ -38,7 +38,7 @@
 	<title>Blocked from running.</title>
 	<desc>Is blocked from running by windows.</desc>
 
-	<needsAdmin>false</needsAdmin> 
+	<needsAdmin>true</needsAdmin> 
 	<autoCheckScript>BlockByWindows_auto.vbs</autoCheckScript> 
 	<runScript>BlockByWindows_run.vbs</runScript>
 	
