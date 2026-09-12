@@ -14,7 +14,8 @@
 	<title>Wont start (cache clear)</title>
 	<desc>Destroys bad cache files.</desc>
 
-	<needsAdmin>false</needsAdmin> 
+	<needsAdmin>false</needsAdmin>
+	<needsAdminFromAgent>false</needsAdminFromAgent> 	
 	<autoCheckScript></autoCheckScript> 
 	<runScript>something_else.bat</runScript>
 	
@@ -26,7 +27,8 @@
 	<title>Wont start (mod corruption)</title>
 	<desc>Moves the mods from the game and if that fixes the issue you can make the move a delete</desc>
 
-	<needsAdmin>false</needsAdmin> 
+	<needsAdmin>false</needsAdmin>
+	<needsAdminFromAgent>false</needsAdminFromAgent> 
 	<autoCheckScript></autoCheckScript> 
 	<runScript>something_else.bat</runScript>
 	
@@ -38,7 +40,8 @@
 	<title>Blocked from running.</title>
 	<desc>Is blocked from running by windows.</desc>
 
-	<needsAdmin>true</needsAdmin> 
+	<needsAdmin>true</needsAdmin>
+	<needsAdminFromAgent>false</needsAdminFromAgent> 
 	<autoCheckScript>BlockByWindows_auto.vbs</autoCheckScript> 
 	<runScript>BlockByWindows_run.vbs</runScript>
 	
