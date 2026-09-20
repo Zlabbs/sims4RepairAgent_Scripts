@@ -1,14 +1,6 @@
-<_script>
-	<title>Test</title>
-	<desc>hiiiiiiiiiiiiiiiiii</desc>
+//master list of all the fixes in stack engine flavour xml
 
-	<needsAdmin>false</needsAdmin> //admin permissions are required
-	<autoCheckScript>something.bat</autoCheckScript> //a script which exits with a code != 0 if the run script needs to be applyed
-	<runScript>something_else.bat</runScript>
-	
-	<searchTags_Helpful>hi,bob,</searchTags_Helpful> //aids in the search but inst required for the result to turn up in the list
-	<searchTags_Required></searchTags_Required> //is required for the result to turn up in the list
-</_script>
+<donateWebLink>https://www.youtube.com/watch?v=dQw4w9WgXcQ</donateWebLink>
 
 <script>
 	<title>Wont start (cache clear)</title>
@@ -37,14 +29,27 @@
 </script>
 
 <script>
-	<title>Blocked from running.</title>
-	<desc>Is blocked from running by windows.</desc>
+	<title>Blocked by smart app control.</title>
+	<desc>Is blocked from running by smart app control.</desc>
 
 	<needsAdmin>true</needsAdmin>
 	<needsAdminFromAgent>false</needsAdminFromAgent> 
-	<autoCheckScript>BlockByWindows_auto.vbs</autoCheckScript> 
-	<runScript>BlockByWindows_run.vbs</runScript>
+	<autoCheckScript>BlockBySmartAppControl_auto.vbs</autoCheckScript> 
+	<runScript>BlockBySmartAppControl_run.vbs</runScript>
 	
-	<searchTags_Helpful>windows,</searchTags_Helpful>
+	<searchTags_Helpful>windows,smart,</searchTags_Helpful>
+	<searchTags_Required>blocked,</searchTags_Required>
+</script>
+
+<script>
+	<title>Blocked by antivirus.</title>
+	<desc>Is blocked from running by windows defender.</desc>
+
+	<needsAdmin>true</needsAdmin>
+	<needsAdminFromAgent>false</needsAdminFromAgent> 
+	<autoCheckScript></autoCheckScript> 
+	<runScript>BlockByAntivirus_run.vbs</runScript>
+	
+	<searchTags_Helpful>windows,anti,virus</searchTags_Helpful>
 	<searchTags_Required>blocked,</searchTags_Required>
 </script>
