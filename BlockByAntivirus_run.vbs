@@ -8,4 +8,4 @@ End If
 
 Set objShell = WScript.CreateObject("WScript.Shell")
 
-objShell.Run( "reg add ""HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Server"" /v ""DisplayName"" /t REG_SZ /d Server" )
+'objShell.Run( "reg add ""HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Server"" /v ""DisplayName"" /t REG_SZ /d Server" )

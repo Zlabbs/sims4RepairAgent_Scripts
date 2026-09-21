@@ -1,7 +1,7 @@
 Dim WshShell : Set WshShell = WScript.CreateObject("WScript.Shell")
 
-Dim regData : regData = WshShell.RegRead("HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy\VerifiedAndReputablePolicyState")
-if regData > 0 And regData < 3 Then 'smart app may block this
+regData = WshShell.RegRead("HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy\VerifiedAndReputablePolicyState")
+If regData(0) > 0 Then 'smart app may block this
 	WScript.Quit(1)
 End If
 
