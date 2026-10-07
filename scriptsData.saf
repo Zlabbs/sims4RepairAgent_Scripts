@@ -1,6 +1,6 @@
 //master list of all the fixes in stack engine flavour xml
 
-<donateWebLink>https://www.youtube.com/watch?v=dQw4w9WgXcQ</donateWebLink>
+<donateWebLink>https://zlabbsweb.github.io/donations/S4RA/</donateWebLink>
 
 <script>
 	<title>Wont start (cache clear)</title>
@@ -29,6 +29,19 @@
 </script>
 
 <script>
+	<title>Wont start (save bricked)</title>
+	<desc>Moves the saves from the game and if that works it will revert it and delete it if that dosent work.</desc>
+
+	<needsAdmin>false</needsAdmin>
+	<needsAdminFromAgent>false</needsAdminFromAgent> 
+	<autoCheckScript></autoCheckScript> 
+	<runScript>something_else.bat</runScript>
+	
+	<searchTags_Helpful>start,corruption,</searchTags_Helpful>
+	<searchTags_Required></searchTags_Required>
+</script>
+
+<script>
 	<title>Blocked by smart app control.</title>
 	<desc>Is blocked from running by smart app control.</desc>
 
@@ -38,18 +51,5 @@
 	<runScript>BlockBySmartAppControl_run.vbs</runScript>
 	
 	<searchTags_Helpful>windows,smart,</searchTags_Helpful>
-	<searchTags_Required>blocked,</searchTags_Required>
-</script>
-
-<script>
-	<title>Blocked by antivirus.</title>
-	<desc>Is blocked from running by windows defender.</desc>
-
-	<needsAdmin>true</needsAdmin>
-	<needsAdminFromAgent>false</needsAdminFromAgent> 
-	<autoCheckScript></autoCheckScript> 
-	<runScript>BlockByAntivirus_run.vbs</runScript>
-	
-	<searchTags_Helpful>windows,anti,virus</searchTags_Helpful>
 	<searchTags_Required>blocked,</searchTags_Required>
 </script>
